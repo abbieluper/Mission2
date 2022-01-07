@@ -1,0 +1,123 @@
+﻿<!--Abbie Luper Index Page-->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Abbie's Site</title>
+
+    <!--icon for the website-->
+    <link rel="shortcut icon" href="/icon.ico" type="image/x-icon">
+
+    <!--link style sheets-->
+    <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="css/myStyles.css" rel="stylesheet" />
+</head>
+<body>
+    <!--preferred name: Abbie Luper-->
+    <h1 class="SiteHeadingOverwrite" style="text-align: center">Abbie Luper</h1>
+
+    <!--images of things I like to do-->
+    <div style="text-align:center;">
+        <div class="row">
+            <div class="column">
+                <img src="img/travel.jpg" alt="Traveling">
+            </div>
+            <div class="column">
+                <img src="img/IMG_8835.jpg" alt="Friends">
+                <img src="img/hiltonHead.jpg" alt="Hilton Head">
+            </div>
+            <div class="column">
+                <img src="img/bryceCanyon.jpg" alt="Bryce Canyon">
+                <img src="img/Georgia.jpg" alt="Georgia">
+            </div>
+            <div class="column">
+                <img src="img/artMuseum.jpg" alt="Art Museum">
+                <img src="img/friends.jpg" alt="Friends">
+            </div>
+            <div class="column">
+                <img src="img/Butterfly.jpg" alt="Butterfly">
+            </div>
+
+        </div>
+    </div>
+
+    <br />
+
+    <!--what I hope to get out of IS 413-->
+    <h4 class="Headers">IS 413</h4>
+    <p>
+        In this class I hope to gain many important skills. To start, I hope to
+        learn c# and asp.net. As I have talked to various companies and employers in my
+        search for an internship, most of them have explained that they use c# and asp.net
+        as their main language. Because it is so widely used in industry, I really want to
+        have a deep understanding of how it works! Additionally, I want to learn new ways to learn.
+        I have realized that one of the most important skills you gain in college is how to learn.
+        I want to learn new ways to pick up different languages so that I will be able to do the same
+        in industry. Finally, I want to have fun along the way!
+    </p>
+    <br />
+
+    <!--top 3 job ideas after graduation-->
+    <h4 class="Headers">Top 3 Jobs</h4>
+    <ol>
+        <li>Web Developer</li>
+        <li>Data Analyst</li>
+        <li>Machine Learning Engineer</li>
+    </ol>
+    <br />
+
+
+    <!--A "Grade Calculator" form that takes as input a percentage scored for
+    each grade category listed in the syllabus-->
+    <fieldset style="width: 250px;">
+        <form>
+            <h4 class="Headers">Grade Calculator</h4>
+            <p>Enter percentage scored for each grade category</p>
+            <!--assignments: 55%-->
+            <label for="assignments">Assignments:</label>
+            <br />
+            <input id="assignments" type="number" min="1" max="100" />
+            <br /><br />
+
+            <!--group project: 5%-->
+            <label for="groupProject">Group Project:</label>
+            <br />
+            <input id="groupProject" type="number" min="1" max="100" />
+            <br /><br />
+
+            <!--quizzes: 10%-->
+            <label>Quizzes:</label>
+            <br />
+            <input id="quizzes" type="number" min="1" max="100" />
+            <br /><br />
+
+            <!--exams: 20%-->
+            <label>Exams:</label>
+            <br />
+            <input id="exams" type="number" min="1" max="100" />
+            <br /><br />
+
+            <!--intex: 10%-->
+            <label>INTEX:</label>
+            <br />
+            <input id="intex" type="number" min="1" max="100" />
+            <br /><br />
+
+            <input id="submitButton" type="button" value="Calculate Grade" class="button" />
+            <br /><br />
+        </form>
+    </fieldset>
+
+    <!--output-->
+    <fieldset style="width: 250px">
+        <legend class="Headers">Results</legend>
+        <p id="myOutput"></p>
+    </fieldset>
+    <br /><br />
+
+    <script src="lib/bootstrap/js/bootstrap.min.js"></script>
+    <script src="lib/jquery/jquery-3.6.0.min.js"></script>
+    <script src="js/gradeCalculator.js"></script>
+</body>
+</html>
